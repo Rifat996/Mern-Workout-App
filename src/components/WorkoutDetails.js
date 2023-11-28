@@ -24,9 +24,9 @@ const WorkoutDetails = ({ workout }) => {
 
 
   return (
-    <Card className='mt-5 p-3 bg-light' style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', border: "none", maxWidth: '400px', margin: '0 auto' }}>
+    <Card className='mt-5 p-3 bg-light' style={{ boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.2)', border: "none", margin: '0 auto' }}>
       <Card.Title>
-        <h4>{workout.title}</h4>
+        <h4 style={{ color: '#33b864' }}>{workout.title}</h4>
       </Card.Title>
       <p><strong>Load (kg:) </strong>{workout.load}</p>
       <p><strong>Reps (kg:) </strong>{workout.reps}</p>

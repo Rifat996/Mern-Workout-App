@@ -43,7 +43,7 @@ const WorkoutForm = () => {
   }
 
   return (
-    <form className="create" onSubmit={handleSubmit}> 
+    <form className="create mt-5" onSubmit={handleSubmit}> 
       <h3>Add a New Workout</h3>
 
       <label>Exercise Title:</label>
@@ -67,7 +67,7 @@ const WorkoutForm = () => {
         value={reps}
       />
 
-      <Button type='submit' variant='outline-primary'>Add Workout</Button>
+      <Button type='submit' variant='secondary'>Add Workout</Button>
       {error && <Alert className='mt-3' variant='danger'>{error}</Alert>}
     </form>
   )
