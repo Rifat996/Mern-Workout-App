@@ -26,14 +26,14 @@ useEffect(() => {
    <>
    <Container>
     <Row>
-      <Col xs={9}>
+      <Col xs={12} md={8}>
         <div>
           {workouts && workouts.map((workout) => (
             <WorkoutDetails key={workout._id} workout={workout}/>
           ) )}
         </div>
       </Col>
-      <Col xs={3}>
+      <Col xs={12} md={4}>
             <WorkoutsForm />
       </Col>
     </Row>
